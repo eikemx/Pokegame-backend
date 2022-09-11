@@ -7,13 +7,13 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(cors());
 
-const PORT = process.env.PORT || 3008;
+const PORT = process.env.PORT || 3088;
 
 app.use("/pokemons", pokemonRoute);
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello Poke-World!");
 });
 
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`);
+  console.log(`Your Pokemon is waiting on port ${PORT}`);
 });
