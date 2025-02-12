@@ -24,9 +24,9 @@ app.get("*", (req, res) => {
   res.redirect("/");
 });
 
-const PORT = process.env.PORT || 3088;
+const port = process.env.PORT || 3088;
 app.set("port", port);
 
-app.listen(PORT, () => {
-  console.log(`Your Pokemon is waiting on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Your Pokemon is waiting on port ${port}`);
 });
