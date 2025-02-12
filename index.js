@@ -2,11 +2,18 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 var cors = require("cors");
-const pokemonRoute = require("./routes/pokemons");
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 app.use(express.json());
 app.use(express.static("public"));
-app.use(cors());
 
+const pokemonRoute = require("./routes/pokemons");
 const PORT = process.env.PORT || 3088;
 
 app.use("/pokemons", pokemonRoute);
