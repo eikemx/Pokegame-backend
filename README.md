@@ -52,11 +52,8 @@ The server will start on port 3088 (or the port specified in your environment va
 ```bash
 pokegame-backend/
 ├── dbs/
-│ └── pokemonsDB.js
 ├── routes/
-│ └── pokemons.js
-├── index.js
-└── package.json
+└── README.md
 ```
 
 ## API Endpoints in Detail
@@ -101,7 +98,8 @@ The API is deployed on Render and can be accessed at:
 
 ## Acknowledgments
 - Pokemon data source
-- [Any other acknowledgments]
+- WBS Coding School
+- Project collaborator: yegormalakhov
 
 ---
 *This project was created as part of [Your Context/Course/Personal Project]*
