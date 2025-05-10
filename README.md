@@ -102,4 +102,4 @@ The API is deployed on Render and can be accessed at:
 - Project collaborator: yegormalakhov
 
 ---
-*This project was created as part of [Your Context/Course/Personal Project]*
+*This project was created as part of the WBS Coding School Bootcamp curriculum*
